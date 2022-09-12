@@ -42,3 +42,9 @@ jobs:
     
       - name: List all files
         run: ls
+
+      - name: Chmod script
+        run: chmod +x script.sh
+      
+      - name: run script
+        run: bash ./script.sh
