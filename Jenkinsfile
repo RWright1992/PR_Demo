@@ -1,10 +1,10 @@
 pipeline {
     agent any
-    Stages {
-        Stage('Set-up'){
-            Steps {sh 'echo "hello" > hello.txt'}
+    stages {
+        stage('Set-up'){
+            steps {sh 'echo "hello" > hello.txt'}
         }
-        Stage('List files')
-            Steps {sh 'ls -la'}
+        stage('List files')
+            steps {sh 'ls -la'}
     }
 }
